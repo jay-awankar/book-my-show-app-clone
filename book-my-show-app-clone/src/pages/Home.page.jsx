@@ -18,7 +18,7 @@ const HomePage = () => {
   useEffect(() => {
     const requestTopRatedMovies = async () => {
       const getTopRatedMovies = await axios.get(
-        "https://api.themoviedb.org/3/movie/top_rated"
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=38858108da13da79e7cf650a5cd7c46c"
       );
       setRecommendedMovies(getTopRatedMovies.data.results);
     };
@@ -28,7 +28,7 @@ const HomePage = () => {
   useEffect(() => {
     const requestPopularMovies = async () => {
       const getPopularMovies = await axios.get(
-        "https://api.themoviedb.org/3/movie/popular"
+        "https://api.themoviedb.org/3/movie/popular?api_key=38858108da13da79e7cf650a5cd7c46c"
       );
       setPremierMovies(getPopularMovies.data.results);
     };
@@ -69,8 +69,10 @@ const HomePage = () => {
         <div className="container mx-auto px-4 md:px-12m my-8 flex flex-col gap-3">
           <div className="hidden md:flex">
             <img
-              src="https://th.bing.com/th/id/R.48eaeab4cb35b98326e25a71479a5d19?rik=BTpamseHj921GA&riu=http%3a%2f%2fegov.eletsonline.com%2fwp-content%2fuploads%2f2015%2f03%2fRuPay.svg_.png&ehk=cXM%2bS%2f1N%2fCAoeUqAw5wMHW8czKqh3G%2bG%2fL%2bjOvXQeyk%3d&risl=&pid=ImgRaw&r=0"
+              src=""
+              
               alt="Rupay"
+              // https://th.bing.com/th/id/R.48eaeab4cb35b98326e25a71479a5d19?rik=BTpamseHj921GA&riu=http%3a%2f%2fegov.eletsonline.com%2fwp-content%2fuploads%2f2015%2f03%2fRuPay.svg_.png&ehk=cXM%2bS%2f1N%2fCAoeUqAw5wMHW8czKqh3G%2bG%2fL%2bjOvXQeyk%3d&risl=&pid=ImgRaw&r=0
               className="w-full h-full"
             ></img>
           </div>

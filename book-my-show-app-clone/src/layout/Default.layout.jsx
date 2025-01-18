@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar.Component';
 
 const DefaultLayoutHoc =
   (ParentComponent) =>
   ({ ...Props }) => {
     return (
       <>
-        {/* <NavbarComponents /> */}
+        <Navbar />
         <ParentComponent {...Props} />
         <div>Footer</div>
       </>
