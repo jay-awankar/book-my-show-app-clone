@@ -8,35 +8,37 @@ const HeroCarousel = () => {
   const [images, setImages] = useState([
     {
       adult: false,
-      backdrop_path: "/ugS5FVfCI3RV0ZwZtBV3HAV75OX.jpg",
-      genre_ids: [16, 878, 28],
-      id: 610150,
-      original_language: "ja",
-      original_title: "...",
-      overview: "The Red Ribbon Array",
-      popularity: 5953.989,
-      poster_path: "",
-      release_date: "2022-06-11",
-      title: "Dragon Ball Z",
+      backdrop_path: "/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+      genre_ids: [18, 80],
+      id: 278,
+      original_language: "en",
+      original_title: "The Shawshank Redemption",
+      overview:
+        "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+      popularity: 178.353,
+      poster_path: "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+      release_date: "1994-09-23",
+      title: "The Shawshank Redemption",
       video: false,
-      vote_average: 8,
-      vote_count: 1426,
+      vote_average: 8.709,
+      vote_count: 27524,
     },
     {
       adult: false,
-      backdrop_path: "ugS5FVfCI3RV0ZwZtBV3HAV75OX.jpg",
-      genre_ids: [16, 878, 28],
-      id: 610150,
-      original_language: "ja",
-      original_title: "...",
-      overview: "The Red Ribbon Array",
-      popularity: 5953.989,
-      poster_path: "",
-      release_date: "2022-06-11",
-      title: "Dragon Ball Z",
+      backdrop_path: "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+      genre_ids: [18, 80],
+      id: 238,
+      original_language: "en",
+      original_title: "The Godfather",
+      overview:
+        "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+      popularity: 185.015,
+      poster_path: "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      release_date: "1972-03-14",
+      title: "The Godfather",
       video: false,
-      vote_average: 8,
-      vote_count: 1426,
+      vote_average: 8.7,
+      vote_count: 20887,
     },
   ]);
   
@@ -73,8 +75,8 @@ const HeroCarousel = () => {
     <>
       <div className="lg:hidden">
         <HeroSlider {...settings}>
-          {images.map(() => {
-            <div className="w-full h-56 md:h-80 py-3">
+          {images.map((image, index) => {
+            <div className="w-full h-56 md:h-80 py-3" key={index}>
               <img
                 src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                 alt="Hero Banner"
@@ -86,8 +88,8 @@ const HeroCarousel = () => {
       </div>
       <div className="hidden lg:block">
         <HeroSlider {...settingsLG}>
-          {images.map(() => {
-            <div className="w-full h-56 md:h-80 py-3">
+          {images.map((image, index) => {
+            <div className="w-full h-96 px-2 py-3" key={index}>
               <img
                 src={`https://image.tmdb.org/t/p/original${images.backdrop_path}`}
                 alt="Hero Banner"

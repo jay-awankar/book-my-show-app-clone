@@ -33,7 +33,8 @@ const EntertainmentCardSlider = () => {
 
   const settings = {
     infinte: true,
-    autoplay: false,
+    autoplay: true,
+    TimeRanges: 1000,
     slidesToShow: 5,
     slidesToScroll: 5,
     initialSlide: 0,
@@ -67,7 +68,7 @@ const EntertainmentCardSlider = () => {
   return(
     <>
       <Slider {...settings}>
-        {EntertainmentImage.map((image) => <EntertainmentCard src={image} />)}
+        {EntertainmentImage.map((image, index) => (<EntertainmentCard src={image} key={index} />))}
       </Slider>
     </>
   )

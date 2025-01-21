@@ -106,3 +106,5 @@ import {BrowserRouter} from "react-router-dom"; in index.js
 
 Routes:
 import { Routes, Route } from 'react-router-dom'; in App.js
+
+https://api.themoviedb.org/3/movie/top_rated?api_key=38858108da13da79e7cf650a5cd7c46c

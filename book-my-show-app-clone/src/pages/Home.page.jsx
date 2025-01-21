@@ -70,7 +70,6 @@ const HomePage = () => {
           <div className="hidden md:flex">
             <img
               src=""
-              
               alt="Rupay"
               // https://th.bing.com/th/id/R.48eaeab4cb35b98326e25a71479a5d19?rik=BTpamseHj921GA&riu=http%3a%2f%2fegov.eletsonline.com%2fwp-content%2fuploads%2f2015%2f03%2fRuPay.svg_.png&ehk=cXM%2bS%2f1N%2fCAoeUqAw5wMHW8czKqh3G%2bG%2fL%2bjOvXQeyk%3d&risl=&pid=ImgRaw&r=0
               className="w-full h-full"
