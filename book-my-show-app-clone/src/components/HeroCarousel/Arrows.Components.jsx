@@ -3,9 +3,13 @@ import React from "react";
 export function NextArrow(props) {
   return (
     <>
-      <div className={props.className} style={{color: "red", padding: "10px"}} onClick={props.onClick}></div>
+      <div
+        className={props.className}
+        style={{ color: "red", padding: "10px" }}
+        onClick={props.onClick}
+      ></div>
     </>
-    )
+  );
 }
 
 export function PreArrow(props) {
@@ -13,7 +17,7 @@ export function PreArrow(props) {
     <>
       <div
         className={props.className}
-        style={{...props.style}}
+        style={{ ...props.style }}
         onClick={props.onClick}
       ></div>
     </>

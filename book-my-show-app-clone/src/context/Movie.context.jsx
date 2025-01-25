@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { createContext, useState } from "react";
+export const MovieContext = createContext();
 
-const MovieContext = () => {
+const MovieProvider = ({ children }) => {
+  const [movie, setMovie] = useState({
+    id: 0,
+    original_title: "",
+    overview: "",
+    backdrop_path: "",
+    poster_path: "",
+  });
   return (
-    <div>
-      MovieContext
-    </div>
-  )
-}
+    <MovieContext.Provider value={{ movie, setMovie }}>
+      {children}
+    </MovieContext.Provider>
+  );
+};
 
-export default MovieContext
+export default MovieProvider;
