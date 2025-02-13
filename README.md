@@ -1,8 +1,8 @@
-#Book My Show Clone
+# Book My Show Clone
 
 This is a Clone of Book My Show Web App using REACT
 
-##Structure
+## Structure
 
 Pages > Home
         Movie
@@ -27,7 +27,7 @@ Layout > DefaultLayout
 
 The Movie DataBase
 
-####Commands
+#### Commands
 
 npx create-react-app .
 
