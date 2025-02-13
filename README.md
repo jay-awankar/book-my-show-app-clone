@@ -4,23 +4,23 @@ This is a Clone of Book My Show Web App using REACT
 
 ## Structure
 
-Pages > Home
-        Movie
+Pages > Home | 
+        Movie | 
         Play
 
-Components > Cast
-             Entertainment
-             HeroCarousel
-             MovieHero
-             Navbar
-             PaymentModal
-             PlayFilters
-             Poster
+Components > Cast | 
+             Entertainment | 
+             HeroCarousel | 
+             MovieHero | 
+             Navbar | 
+             PaymentModal | 
+             PlayFilters | 
+             Poster | 
              PosterSlider
              
 Context > MovieContext
 
-Layout > DefaultLayout
+Layout > DefaultLayout | 
          MovieLayout
 
 ### API Reference
